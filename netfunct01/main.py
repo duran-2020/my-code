@@ -8,6 +8,7 @@ import json
 # function to accept a list of IPs, iterate through the list, and print a special output
 def devicereboot(devicecmd):
 
+    print("Here's a list off all the IP addresses. They will each reboot.\n")
     for ip in devicecmd.keys(): #loop through the dict
         print(f'Connecting to.. {ip}. REBOOTING NOW! ')
     return None
